@@ -1,11 +1,11 @@
 import cx_Freeze
 
-executables = [cx_Freeze.Executable(script="batalhaaerea.py",icon="assets/Trollface.png")]
+executables = [cx_Freeze.Executable(script="batalhaaerea.py",icon="assets/saikomene.ico")]
 
 cx_Freeze.setup(
     name="Batalha Aerea",
     options={"build_exe": {"packages":["pygame"],
-                            "include_files":["assests"]}},
+                            "include_files":["assets"]}},
     executables = executables
 
-    )
+)
